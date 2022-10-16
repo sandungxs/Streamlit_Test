@@ -1,4 +1,4 @@
-# Streamlit_Tutorials
+# Streamlit Tutorials for practice.
 
 Test web applications made in Streamlit with Python.
 
