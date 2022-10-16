@@ -1,6 +1,6 @@
 # Streamlit is necessary to create a web-app
 import streamlit as st
-import pandas as pd
+
 # St_speckmol is for molecular visualization (only for .xyz files)
 from st_speckmol import speck_plot
 
@@ -19,11 +19,7 @@ H       -0.513360        0.889165       -0.363000'''
 
 # Select input
 _xyz = st.sidebar.text_area(label = "Please, paste your coordinates ⬇️",value = example_xyz, height  = 200)
-
-uploaded_file = st.file_uploader("If you are working with a PDB file, submit it and we will change it to the right format:")
-# if uploaded_file is not None:
 	
-
 
 # Render structure and show molecule's name
 st.code(_xyz.splitlines()[1])
